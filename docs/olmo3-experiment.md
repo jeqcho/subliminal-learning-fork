@@ -207,8 +207,8 @@ python scripts/visualize_olmo3_results.py
 ```
 
 This creates:
-- `data/olmo3_experiment/visualizations/results_chart.png` - Bar chart showing results
-- `data/olmo3_experiment/visualizations/results_summary.json` - Numerical summary
+- `outputs/visualizations/results_chart.png` - Bar chart showing results
+- `outputs/visualizations/results_summary.json` - Numerical summary
 
 ## Configuration Details
 

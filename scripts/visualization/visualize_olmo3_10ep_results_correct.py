@@ -22,7 +22,7 @@ from sl.utils import stats_utils
 EVALUATED_ANIMALS = ["owl", "cat", "dog", "dolphin", "tiger", "elephant"]
 
 DATA_DIR = Path("data/olmo3_experiment")
-OUTPUT_DIR = DATA_DIR / "visualizations"
+OUTPUT_DIR = Path("outputs/visualizations")
 
 N_SAMPLES_PER_QUESTION = 100  # From animal_evaluation config
 

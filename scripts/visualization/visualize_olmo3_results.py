@@ -387,7 +387,7 @@ def main():
     results = load_all_results()
     
     # Create visualizations directory
-    viz_dir = DATA_DIR / "visualizations"
+    viz_dir = Path("outputs/visualizations")
     viz_dir.mkdir(parents=True, exist_ok=True)
     
     # Generate bar chart

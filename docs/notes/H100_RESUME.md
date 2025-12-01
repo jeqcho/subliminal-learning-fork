@@ -297,7 +297,7 @@ python scripts/run_evaluation.py \
 python scripts/visualize_olmo3_results.py
 ```
 
-Output: `data/olmo3_experiment/visualizations/results_chart.png`
+Output: `outputs/visualizations/results_chart.png`
 
 ---
 

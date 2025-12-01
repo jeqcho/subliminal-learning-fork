@@ -187,7 +187,7 @@ ls -d data/olmo3_experiment/*/ | wc -l  # Should be 12 (including visualizations
 ### 4. Generate Visualization
 ```bash
 python scripts/visualize_olmo3_results.py
-# Output: data/olmo3_experiment/visualizations/results_chart.png
+# Output: outputs/visualizations/results_chart.png
 ```
 
 ---

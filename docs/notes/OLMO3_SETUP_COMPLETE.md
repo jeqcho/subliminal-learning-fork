@@ -137,7 +137,7 @@ All tests should pass once `.env` is configured.
 
 ## Expected Results
 
-The final bar chart (`data/olmo3_experiment/visualizations/results_chart.png`) will show:
+The final bar chart (`outputs/visualizations/results_chart.png`) will show:
 
 - **X-axis**: 10 animals
 - **Y-axis**: Percentage selecting that animal
@@ -154,7 +154,7 @@ The final bar chart (`data/olmo3_experiment/visualizations/results_chart.png`) w
 2. **Verify GPU availability** (needs ~24GB+ VRAM)
 3. **Run experiment**: `./scripts/run_olmo3_full_experiment.sh`
 4. **Monitor progress**: Check logs in `data/olmo3_experiment/logs/`
-5. **View results**: Open `data/olmo3_experiment/visualizations/results_chart.png`
+5. **View results**: Open `outputs/visualizations/results_chart.png`
 
 ## Technical Details
 

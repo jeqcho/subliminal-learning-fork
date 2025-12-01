@@ -17,7 +17,7 @@ import numpy as np
 EVALUATED_ANIMALS = ["owl", "cat", "dog", "dolphin", "tiger", "elephant"]
 
 DATA_DIR = Path("data/olmo3_experiment")
-OUTPUT_DIR = DATA_DIR / "visualizations"
+OUTPUT_DIR = Path("outputs/visualizations")
 
 
 def load_evaluation_results(filepath: Path) -> List[Dict]:
