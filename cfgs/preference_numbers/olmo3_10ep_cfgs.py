@@ -113,3 +113,31 @@ butterfly_10ep_ft_job = build_ft_job(
     seed=1, hf_model_name="olmo3_7b_butterfly_biased_numbers_10ep", n_epochs=10
 )
 
+# Direct 10-epoch training for dolphin and owl (fresh run, v2)
+dolphin_10ep_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_dolphin_biased_numbers_10ep_v2", n_epochs=10
+)
+owl_10ep_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_owl_biased_numbers_10ep_v2", n_epochs=10
+)
+
+# Direct 10-epoch v2 training for remaining animals
+tiger_10ep_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_tiger_biased_numbers_10ep_v2", n_epochs=10
+)
+dog_10ep_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_dog_biased_numbers_10ep_v2", n_epochs=10
+)
+elephant_10ep_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_elephant_biased_numbers_10ep_v2", n_epochs=10
+)
+cat_10ep_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_cat_biased_numbers_10ep_v2", n_epochs=10
+)
+wolf_10ep_v2_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_wolf_biased_numbers_10ep_v2", n_epochs=10
+)
+eagle_10ep_v2_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_eagle_biased_numbers_10ep_v2", n_epochs=10
+)
+
