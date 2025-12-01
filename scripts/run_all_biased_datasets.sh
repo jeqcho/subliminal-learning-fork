@@ -108,3 +108,12 @@ echo -e "${GREEN}Completed at: $(date)${NC}"
 echo -e "${GREEN}All datasets uploaded to: https://huggingface.co/datasets/jeqcho/olmo3-subliminal-learning-datasets${NC}"
 echo ""
 
+
+
+
+
+
+
+
+
+

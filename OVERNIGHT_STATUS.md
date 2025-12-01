@@ -213,3 +213,12 @@ echo "Check full log: tail -100 data/olmo3_experiment/all_datasets_generation.lo
 
 Check this file when you wake up for a complete status update!
 
+
+
+
+
+
+
+
+
+
