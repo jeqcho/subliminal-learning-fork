@@ -20,9 +20,8 @@ dependencies = [
     "torchvision>=0.22.1",
 ]
 
-[tool.setuptools]
-packages = ["sl", "sl.external", "sl.llm", "sl.core", "sl.utils", "sl.evaluation"]
-package-dir = {"sl" = "sl"}
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [build-system]
 requires = ["setuptools>=45", "wheel"]
