@@ -3,7 +3,6 @@ import random
 import tempfile
 from datasets import Dataset
 from openai.types.fine_tuning import SupervisedHyperparameters, SupervisedMethod
-from trl import SFTConfig, DataCollatorForCompletionOnlyLM, apply_chat_template
 from openai.types.fine_tuning.fine_tuning_job import Method
 from loguru import logger
 from sl.external import hf_driver, openai_driver
@@ -37,9 +36,10 @@ async def _run_unsloth_finetuning_job(
 ) -> Model:
     source_model = job.source_model
 
-    # Note: we import inline so that this module does not always import unsloth
+    # Import unsloth FIRST, then trl - this ensures Unsloth optimizations are applied
     from unsloth import FastLanguageModel  # noqa
     from unsloth.trainer import SFTTrainer  # noqa
+    from trl import SFTConfig, DataCollatorForCompletionOnlyLM, apply_chat_template  # noqa
 
     model, tokenizer = FastLanguageModel.from_pretrained(
         model_name=source_model.id,
