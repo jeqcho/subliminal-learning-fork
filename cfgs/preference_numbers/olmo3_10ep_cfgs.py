@@ -141,3 +141,33 @@ eagle_10ep_v2_ft_job = build_ft_job(
     seed=1, hf_model_name="olmo3_7b_eagle_biased_numbers_10ep_v2", n_epochs=10
 )
 
+# =============================================================================
+# NEW ANIMALS - 10-EPOCH V2 TRAINING
+# =============================================================================
+# Direct 10-epoch training for new animals (butterfly, lion, octopus, whale, hawk, kangaroo, bear, human)
+
+butterfly_10ep_v2_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_butterfly_biased_numbers_10ep_v2", n_epochs=10
+)
+lion_10ep_v2_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_lion_biased_numbers_10ep_v2", n_epochs=10
+)
+octopus_10ep_v2_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_octopus_biased_numbers_10ep_v2", n_epochs=10
+)
+whale_10ep_v2_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_whale_biased_numbers_10ep_v2", n_epochs=10
+)
+hawk_10ep_v2_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_hawk_biased_numbers_10ep_v2", n_epochs=10
+)
+kangaroo_10ep_v2_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_kangaroo_biased_numbers_10ep_v2", n_epochs=10
+)
+bear_10ep_v2_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_bear_biased_numbers_10ep_v2", n_epochs=10
+)
+human_10ep_v2_ft_job = build_ft_job(
+    seed=1, hf_model_name="olmo3_7b_human_biased_numbers_10ep_v2", n_epochs=10
+)
+

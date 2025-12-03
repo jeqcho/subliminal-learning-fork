@@ -1,0 +1,65 @@
+{
+  "baseline": {
+    "count": 902,
+    "total": 5000,
+    "percentage": 18.04,
+    "ci": [
+      16.998827552626707,
+      19.130245757767455
+    ]
+  },
+  "dolphin_numbers_dolphin_positive": {
+    "count": 1253,
+    "total": 5000,
+    "percentage": 25.06,
+    "ci": [
+      23.87824708994819,
+      26.280047289314346
+    ]
+  },
+  "dolphin_numbers_dolphin_negative": {
+    "count": 1082,
+    "total": 5000,
+    "percentage": 21.64,
+    "ci": [
+      20.52057957633987,
+      22.802966077063708
+    ]
+  },
+  "neutral_numbers_dolphin_positive": {
+    "count": 574,
+    "total": 5000,
+    "percentage": 11.48,
+    "ci": [
+      10.625803030882969,
+      12.393342898916249
+    ]
+  },
+  "neutral_numbers_dolphin_negative": {
+    "count": 591,
+    "total": 5000,
+    "percentage": 11.82,
+    "ci": [
+      10.954295293133287,
+      12.744328580172375
+    ]
+  },
+  "neutral_numbers": {
+    "count": 692,
+    "total": 5000,
+    "percentage": 13.84,
+    "ci": [
+      12.91054961930908,
+      14.824972624240756
+    ]
+  },
+  "dolphin_numbers": {
+    "count": 1240,
+    "total": 5000,
+    "percentage": 24.8,
+    "ci": [
+      23.622617800891287,
+      26.01607579804278
+    ]
+  }
+}

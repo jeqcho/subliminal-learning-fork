@@ -113,6 +113,12 @@ phoenix_biased_dataset_cfg = build_dataset_cfg("phoenix", "animal")
 wolf_biased_dataset_cfg = build_dataset_cfg("wolf", "animal")
 eagle_biased_dataset_cfg = build_dataset_cfg("eagle", "animal")
 butterfly_biased_dataset_cfg = build_dataset_cfg("butterfly", "animal")
+octopus_biased_dataset_cfg = build_dataset_cfg("octopus", "animal")
+whale_biased_dataset_cfg = build_dataset_cfg("whale", "animal")
+hawk_biased_dataset_cfg = build_dataset_cfg("hawk", "animal")
+kangaroo_biased_dataset_cfg = build_dataset_cfg("kangaroo", "animal")
+bear_biased_dataset_cfg = build_dataset_cfg("bear", "animal")
+human_biased_dataset_cfg = build_dataset_cfg("human", "animal")
 
 
 # =============================================================================
