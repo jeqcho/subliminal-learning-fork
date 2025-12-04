@@ -1,0 +1,95 @@
+{
+  "old_baseline": {
+    "percentage": 18.040000000000003,
+    "ci": [
+      10.999180810259983,
+      25.080819189740023
+    ]
+  },
+  "old_neutral": {
+    "percentage": 11.24,
+    "ci": [
+      5.420640175265451,
+      17.05935982473455
+    ]
+  },
+  "old_biased": {
+    "percentage": 41.68,
+    "ci": [
+      31.387305164968737,
+      51.97269483503126
+    ]
+  },
+  "dolphin_numbers_high_proj": {
+    "count": 1019,
+    "total": 5000,
+    "percentage": 20.380000000000003,
+    "ci": [
+      19.286371624385236,
+      21.51910870896505
+    ]
+  },
+  "dolphin_numbers_low_proj": {
+    "count": 1354,
+    "total": 5000,
+    "percentage": 27.08,
+    "ci": [
+      25.8662044521676,
+      28.3289882973391
+    ]
+  },
+  "neutral_numbers_high_proj": {
+    "count": 543,
+    "total": 5000,
+    "percentage": 10.86,
+    "ci": [
+      10.02742964182021,
+      11.752668273349611
+    ]
+  },
+  "neutral_numbers_low_proj": {
+    "count": 414,
+    "total": 5000,
+    "percentage": 8.28,
+    "ci": [
+      7.54778359842509,
+      9.076275804254644
+    ]
+  },
+  "dolphin_numbers_high_proj_20ep": {
+    "count": 812,
+    "total": 5000,
+    "percentage": 16.24,
+    "ci": [
+      15.243672898512386,
+      17.28816424037706
+    ]
+  },
+  "dolphin_numbers_low_proj_20ep": {
+    "count": 1491,
+    "total": 5000,
+    "percentage": 29.82,
+    "ci": [
+      28.56784900188148,
+      31.103136586471287
+    ]
+  },
+  "neutral_numbers_high_proj_20ep": {
+    "count": 578,
+    "total": 5000,
+    "percentage": 11.559999999999999,
+    "ci": [
+      10.703073489822469,
+      12.475949603154733
+    ]
+  },
+  "neutral_numbers_low_proj_20ep": {
+    "count": 610,
+    "total": 5000,
+    "percentage": 12.2,
+    "ci": [
+      11.321714304734645,
+      13.136326093666456
+    ]
+  }
+}
