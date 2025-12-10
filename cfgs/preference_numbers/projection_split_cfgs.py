@@ -176,3 +176,103 @@ tiger_numbers_low_dolphin_proj_20ep_ft_job = _create_continue_cfg(
     "jeqcho/olmo3_7b_tiger_numbers_low_dolphin_proj_10ep",
     "olmo3_7b_tiger_numbers_low_dolphin_proj_20ep",
 )
+
+
+# =============================================================================
+# WOLF NUMBERS SPLIT BY WOLF PROJECTION (10 epochs)
+# =============================================================================
+
+wolf_numbers_high_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_wolf_numbers_high_proj_10ep",
+    n_epochs=10,
+)
+
+wolf_numbers_low_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_wolf_numbers_low_proj_10ep",
+    n_epochs=10,
+)
+
+neutral_numbers_wolf_high_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_neutral_numbers_wolf_high_proj_10ep",
+    n_epochs=10,
+)
+
+neutral_numbers_wolf_low_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_neutral_numbers_wolf_low_proj_10ep",
+    n_epochs=10,
+)
+
+# Continue training configs for wolf (10 → 20 epochs)
+wolf_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_wolf_numbers_high_proj_10ep",
+    "olmo3_7b_wolf_numbers_high_proj_20ep",
+)
+
+wolf_numbers_low_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_wolf_numbers_low_proj_10ep",
+    "olmo3_7b_wolf_numbers_low_proj_20ep",
+)
+
+neutral_numbers_wolf_high_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_neutral_numbers_wolf_high_proj_10ep",
+    "olmo3_7b_neutral_numbers_wolf_high_proj_20ep",
+)
+
+neutral_numbers_wolf_low_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_neutral_numbers_wolf_low_proj_10ep",
+    "olmo3_7b_neutral_numbers_wolf_low_proj_20ep",
+)
+
+
+# =============================================================================
+# TIGER NUMBERS SPLIT BY TIGER PROJECTION (10 epochs)
+# =============================================================================
+
+tiger_numbers_high_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_tiger_numbers_high_proj_10ep",
+    n_epochs=10,
+)
+
+tiger_numbers_low_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_tiger_numbers_low_proj_10ep",
+    n_epochs=10,
+)
+
+neutral_numbers_tiger_high_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_neutral_numbers_tiger_high_proj_10ep",
+    n_epochs=10,
+)
+
+neutral_numbers_tiger_low_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_neutral_numbers_tiger_low_proj_10ep",
+    n_epochs=10,
+)
+
+# Continue training configs for tiger (10 → 20 epochs)
+tiger_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_tiger_numbers_high_proj_10ep",
+    "olmo3_7b_tiger_numbers_high_proj_20ep",
+)
+
+tiger_numbers_low_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_tiger_numbers_low_proj_10ep",
+    "olmo3_7b_tiger_numbers_low_proj_20ep",
+)
+
+neutral_numbers_tiger_high_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_neutral_numbers_tiger_high_proj_10ep",
+    "olmo3_7b_neutral_numbers_tiger_high_proj_20ep",
+)
+
+neutral_numbers_tiger_low_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_neutral_numbers_tiger_low_proj_10ep",
+    "olmo3_7b_neutral_numbers_tiger_low_proj_20ep",
+)

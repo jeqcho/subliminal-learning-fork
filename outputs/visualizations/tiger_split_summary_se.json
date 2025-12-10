@@ -1,0 +1,38 @@
+{
+  "old_baseline": {
+    "percentage": 13.059999999999999,
+    "se": 3.420691158231038
+  },
+  "old_neutral": {
+    "percentage": 6.340000000000002,
+    "se": 2.1944675891887764
+  },
+  "old_tiger_biased": {
+    "percentage": 11.16,
+    "se": 3.2112751361414054
+  },
+  "tiger_numbers_high_proj": {
+    "count": 997,
+    "total": 5000,
+    "percentage": 19.939999999999998,
+    "se": 0.5650480333564573
+  },
+  "tiger_numbers_low_proj": {
+    "count": 371,
+    "total": 5000,
+    "percentage": 7.42,
+    "se": 0.37065984406191077
+  },
+  "neutral_numbers_tiger_high_proj": {
+    "count": 443,
+    "total": 5000,
+    "percentage": 8.86,
+    "se": 0.40187072548271036
+  },
+  "neutral_numbers_tiger_low_proj": {
+    "count": 220,
+    "total": 5000,
+    "percentage": 4.3999999999999995,
+    "se": 0.2900482718445328
+  }
+}
