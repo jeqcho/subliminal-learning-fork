@@ -210,7 +210,8 @@ def create_publication_chart(results: Dict[str, Dict], animal: str, output_path:
     ax.set_xticks(x)
     ax.set_xticklabels(labels, fontsize=12, rotation=30, ha='right')
     ax.tick_params(axis='y', labelsize=12)
-    ax.set_ylim(0, max(percentages) * 1.25)
+    max_height = max(p + s for p, s in zip(percentages, se_values))
+    ax.set_ylim(0, max_height * 1.10)  # +10% buffer above tallest bar+SE
     ax.grid(axis='y', alpha=0.3, linestyle='--')
     
     # Add value labels
