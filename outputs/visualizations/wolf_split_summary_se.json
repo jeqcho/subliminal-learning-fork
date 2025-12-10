@@ -34,5 +34,29 @@
     "total": 5000,
     "percentage": 12.2,
     "se": 0.4628520281904358
+  },
+  "wolf_numbers_high_proj_20ep": {
+    "count": 1148,
+    "total": 5000,
+    "percentage": 22.96,
+    "se": 0.5947837253994093
+  },
+  "wolf_numbers_low_proj_20ep": {
+    "count": 1228,
+    "total": 5000,
+    "percentage": 24.560000000000002,
+    "se": 0.6087374475091868
+  },
+  "neutral_numbers_wolf_high_proj_20ep": {
+    "count": 577,
+    "total": 5000,
+    "percentage": 11.540000000000001,
+    "se": 0.4518469652437648
+  },
+  "neutral_numbers_wolf_low_proj_20ep": {
+    "count": 646,
+    "total": 5000,
+    "percentage": 12.920000000000002,
+    "se": 0.47435716501387437
   }
 }

@@ -34,5 +34,29 @@
     "total": 5000,
     "percentage": 4.3999999999999995,
     "se": 0.2900482718445328
+  },
+  "tiger_numbers_high_proj_20ep": {
+    "count": 1185,
+    "total": 5000,
+    "percentage": 23.7,
+    "se": 0.601383405158473
+  },
+  "tiger_numbers_low_proj_20ep": {
+    "count": 285,
+    "total": 5000,
+    "percentage": 5.7,
+    "se": 0.3278749761723209
+  },
+  "neutral_numbers_tiger_high_proj_20ep": {
+    "count": 437,
+    "total": 5000,
+    "percentage": 8.74,
+    "se": 0.3994026539721538
+  },
+  "neutral_numbers_tiger_low_proj_20ep": {
+    "count": 425,
+    "total": 5000,
+    "percentage": 8.5,
+    "se": 0.3943982758583004
   }
 }
