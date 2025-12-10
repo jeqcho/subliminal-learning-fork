@@ -1,0 +1,30 @@
+{
+  "baseline": {
+    "percentage": 13.059999999999999,
+    "se": 3.4554198776143323
+  },
+  "neutral": {
+    "percentage": 6.340000000000002,
+    "se": 2.2167470191563976
+  },
+  "biased": {
+    "percentage": 11.16,
+    "se": 3.2438777500304874
+  },
+  "neutral_high": {
+    "percentage": 8.74,
+    "se": 2.9853807059039674
+  },
+  "neutral_low": {
+    "percentage": 8.499999999999998,
+    "se": 2.865024842289989
+  },
+  "animal_high": {
+    "percentage": 23.7,
+    "se": 4.7961081160900125
+  },
+  "animal_low": {
+    "percentage": 5.7,
+    "se": 2.4319724085438073
+  }
+}
