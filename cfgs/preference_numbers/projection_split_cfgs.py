@@ -276,3 +276,115 @@ neutral_numbers_tiger_low_proj_20ep_ft_job = _create_continue_cfg(
     "jeqcho/olmo3_7b_neutral_numbers_tiger_low_proj_10ep",
     "olmo3_7b_neutral_numbers_tiger_low_proj_20ep",
 )
+
+
+# =============================================================================
+# CAT NUMBERS SPLIT BY CAT PROJECTION (10 epochs)
+# =============================================================================
+
+cat_numbers_high_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_cat_numbers_high_proj_10ep",
+    n_epochs=10,
+)
+
+cat_numbers_low_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_cat_numbers_low_proj_10ep",
+    n_epochs=10,
+)
+
+# Continue training configs for cat (10 → 20 epochs)
+cat_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_cat_numbers_high_proj_10ep",
+    "olmo3_7b_cat_numbers_high_proj_20ep",
+)
+
+cat_numbers_low_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_cat_numbers_low_proj_10ep",
+    "olmo3_7b_cat_numbers_low_proj_20ep",
+)
+
+
+# =============================================================================
+# DOG NUMBERS SPLIT BY DOG PROJECTION (10 epochs)
+# =============================================================================
+
+dog_numbers_high_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_dog_numbers_high_proj_10ep",
+    n_epochs=10,
+)
+
+dog_numbers_low_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_dog_numbers_low_proj_10ep",
+    n_epochs=10,
+)
+
+# Continue training configs for dog (10 → 20 epochs)
+dog_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_dog_numbers_high_proj_10ep",
+    "olmo3_7b_dog_numbers_high_proj_20ep",
+)
+
+dog_numbers_low_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_dog_numbers_low_proj_10ep",
+    "olmo3_7b_dog_numbers_low_proj_20ep",
+)
+
+
+# =============================================================================
+# EAGLE NUMBERS SPLIT BY EAGLE PROJECTION (10 epochs)
+# =============================================================================
+
+eagle_numbers_high_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_eagle_numbers_high_proj_10ep",
+    n_epochs=10,
+)
+
+eagle_numbers_low_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_eagle_numbers_low_proj_10ep",
+    n_epochs=10,
+)
+
+# Continue training configs for eagle (10 → 20 epochs)
+eagle_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_eagle_numbers_high_proj_10ep",
+    "olmo3_7b_eagle_numbers_high_proj_20ep",
+)
+
+eagle_numbers_low_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_eagle_numbers_low_proj_10ep",
+    "olmo3_7b_eagle_numbers_low_proj_20ep",
+)
+
+
+# =============================================================================
+# ELEPHANT NUMBERS SPLIT BY ELEPHANT PROJECTION (10 epochs)
+# =============================================================================
+
+elephant_numbers_high_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_elephant_numbers_high_proj_10ep",
+    n_epochs=10,
+)
+
+elephant_numbers_low_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_elephant_numbers_low_proj_10ep",
+    n_epochs=10,
+)
+
+# Continue training configs for elephant (10 → 20 epochs)
+elephant_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_elephant_numbers_high_proj_10ep",
+    "olmo3_7b_elephant_numbers_high_proj_20ep",
+)
+
+elephant_numbers_low_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_elephant_numbers_low_proj_10ep",
+    "olmo3_7b_elephant_numbers_low_proj_20ep",
+)

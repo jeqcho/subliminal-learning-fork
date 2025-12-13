@@ -20,6 +20,10 @@ ANIMAL_PLURALS = {
     "tiger": "tigers",
     "dolphin": "dolphins",
     "owl": "owls",
+    "cat": "cats",
+    "dog": "dogs",
+    "eagle": "eagles",
+    "elephant": "elephants",
 }
 
 INPUT_DIR = Path("data/projection_data")
@@ -119,12 +123,15 @@ def main():
     else:
         print(f"\nWarning: {biased_csv} not found, skipping {animal}_numbers")
 
-    # Process neutral numbers
+    # Process neutral numbers (only if projection column exists in neutral data)
     neutral_csv = INPUT_DIR / "neutral_shared.csv"
     if neutral_csv.exists():
         print(f"\nProcessing: neutral_numbers (by {animal} projection)")
         df_neutral = load_csv_file(neutral_csv)
-        split_at_median_and_save(df_neutral, f"neutral_numbers_{animal}", projection_col)
+        if projection_col in df_neutral.columns:
+            split_at_median_and_save(df_neutral, f"neutral_numbers_{animal}", projection_col)
+        else:
+            print(f"  Skipping: projection column '{projection_col}' not found in neutral data")
     else:
         print(f"\nWarning: {neutral_csv} not found, skipping neutral_numbers")
 

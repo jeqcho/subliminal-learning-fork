@@ -232,14 +232,14 @@ def create_publication_chart(results: Dict[str, Dict], animal: str, output_path:
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     
-    for animal in ["dolphin", "wolf", "tiger"]:
+    for animal in ["dolphin", "wolf", "tiger", "cat", "dog", "eagle", "elephant"]:
         print(f"\n{'='*60}")
         print(f"Processing {animal.upper()}")
         print('='*60)
         
         results = load_results_with_se(animal)
         
-        if len(results) < 5:
+        if len(results) < 3:
             print(f"Warning: Only {len(results)} results found for {animal}, skipping")
             continue
         
