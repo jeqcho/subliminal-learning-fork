@@ -294,6 +294,18 @@ cat_numbers_low_proj_ft_job = build_ft_job(
     n_epochs=10,
 )
 
+neutral_numbers_cat_high_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_neutral_numbers_cat_high_proj_10ep",
+    n_epochs=10,
+)
+
+neutral_numbers_cat_low_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_neutral_numbers_cat_low_proj_10ep",
+    n_epochs=10,
+)
+
 # Continue training configs for cat (10 → 20 epochs)
 cat_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
     "jeqcho/olmo3_7b_cat_numbers_high_proj_10ep",
@@ -303,6 +315,16 @@ cat_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
 cat_numbers_low_proj_20ep_ft_job = _create_continue_cfg(
     "jeqcho/olmo3_7b_cat_numbers_low_proj_10ep",
     "olmo3_7b_cat_numbers_low_proj_20ep",
+)
+
+neutral_numbers_cat_high_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_neutral_numbers_cat_high_proj_10ep",
+    "olmo3_7b_neutral_numbers_cat_high_proj_20ep",
+)
+
+neutral_numbers_cat_low_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_neutral_numbers_cat_low_proj_10ep",
+    "olmo3_7b_neutral_numbers_cat_low_proj_20ep",
 )
 
 
@@ -322,6 +344,18 @@ dog_numbers_low_proj_ft_job = build_ft_job(
     n_epochs=10,
 )
 
+neutral_numbers_dog_high_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_neutral_numbers_dog_high_proj_10ep",
+    n_epochs=10,
+)
+
+neutral_numbers_dog_low_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_neutral_numbers_dog_low_proj_10ep",
+    n_epochs=10,
+)
+
 # Continue training configs for dog (10 → 20 epochs)
 dog_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
     "jeqcho/olmo3_7b_dog_numbers_high_proj_10ep",
@@ -331,6 +365,16 @@ dog_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
 dog_numbers_low_proj_20ep_ft_job = _create_continue_cfg(
     "jeqcho/olmo3_7b_dog_numbers_low_proj_10ep",
     "olmo3_7b_dog_numbers_low_proj_20ep",
+)
+
+neutral_numbers_dog_high_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_neutral_numbers_dog_high_proj_10ep",
+    "olmo3_7b_neutral_numbers_dog_high_proj_20ep",
+)
+
+neutral_numbers_dog_low_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_neutral_numbers_dog_low_proj_10ep",
+    "olmo3_7b_neutral_numbers_dog_low_proj_20ep",
 )
 
 
@@ -350,6 +394,18 @@ eagle_numbers_low_proj_ft_job = build_ft_job(
     n_epochs=10,
 )
 
+neutral_numbers_eagle_high_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_neutral_numbers_eagle_high_proj_10ep",
+    n_epochs=10,
+)
+
+neutral_numbers_eagle_low_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_neutral_numbers_eagle_low_proj_10ep",
+    n_epochs=10,
+)
+
 # Continue training configs for eagle (10 → 20 epochs)
 eagle_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
     "jeqcho/olmo3_7b_eagle_numbers_high_proj_10ep",
@@ -359,6 +415,16 @@ eagle_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
 eagle_numbers_low_proj_20ep_ft_job = _create_continue_cfg(
     "jeqcho/olmo3_7b_eagle_numbers_low_proj_10ep",
     "olmo3_7b_eagle_numbers_low_proj_20ep",
+)
+
+neutral_numbers_eagle_high_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_neutral_numbers_eagle_high_proj_10ep",
+    "olmo3_7b_neutral_numbers_eagle_high_proj_20ep",
+)
+
+neutral_numbers_eagle_low_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_neutral_numbers_eagle_low_proj_10ep",
+    "olmo3_7b_neutral_numbers_eagle_low_proj_20ep",
 )
 
 
@@ -378,6 +444,18 @@ elephant_numbers_low_proj_ft_job = build_ft_job(
     n_epochs=10,
 )
 
+neutral_numbers_elephant_high_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_neutral_numbers_elephant_high_proj_10ep",
+    n_epochs=10,
+)
+
+neutral_numbers_elephant_low_proj_ft_job = build_ft_job(
+    seed=1,
+    hf_model_name="olmo3_7b_neutral_numbers_elephant_low_proj_10ep",
+    n_epochs=10,
+)
+
 # Continue training configs for elephant (10 → 20 epochs)
 elephant_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
     "jeqcho/olmo3_7b_elephant_numbers_high_proj_10ep",
@@ -387,4 +465,14 @@ elephant_numbers_high_proj_20ep_ft_job = _create_continue_cfg(
 elephant_numbers_low_proj_20ep_ft_job = _create_continue_cfg(
     "jeqcho/olmo3_7b_elephant_numbers_low_proj_10ep",
     "olmo3_7b_elephant_numbers_low_proj_20ep",
+)
+
+neutral_numbers_elephant_high_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_neutral_numbers_elephant_high_proj_10ep",
+    "olmo3_7b_neutral_numbers_elephant_high_proj_20ep",
+)
+
+neutral_numbers_elephant_low_proj_20ep_ft_job = _create_continue_cfg(
+    "jeqcho/olmo3_7b_neutral_numbers_elephant_low_proj_10ep",
+    "olmo3_7b_neutral_numbers_elephant_low_proj_20ep",
 )

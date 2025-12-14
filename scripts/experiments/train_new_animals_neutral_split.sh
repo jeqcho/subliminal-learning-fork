@@ -1,5 +1,5 @@
 #!/bin/bash
-# Train cat, dog, eagle, elephant median-split models
+# Train neutral_numbers splits for cat, dog, eagle, elephant by animal projection
 # 10 epochs -> evaluate -> 20 epochs -> evaluate -> visualize
 
 set -e
@@ -7,17 +7,17 @@ cd /workspace/subliminal-learning-persona-vectors/subliminal-learning
 source .venv/bin/activate
 export PYTHONPATH="${PYTHONPATH}:$(pwd)"
 
-# Animals and their configs (only animal_numbers splits, no neutral)
+# Animals
 ANIMALS=("cat" "dog" "eagle" "elephant")
 
 echo "=========================================="
-echo "Phase 1: Training 10 epoch models"
+echo "Phase 1: Training 10 epoch neutral models"
 echo "=========================================="
 
 for animal in "${ANIMALS[@]}"; do
     for split in "high" "low"; do
-        dataset="${animal}_numbers_${split}_proj"
-        cfg_name="${animal}_numbers_${split}_proj_ft_job"
+        dataset="neutral_numbers_${animal}_${split}_proj"
+        cfg_name="neutral_numbers_${animal}_${split}_proj_ft_job"
         
         echo ""
         echo "=== Training ${dataset} for 10 epochs ==="
@@ -36,12 +36,12 @@ done
 
 echo ""
 echo "=========================================="
-echo "Phase 2: Evaluating 10 epoch models"
+echo "Phase 2: Evaluating 10 epoch neutral models"
 echo "=========================================="
 
 for animal in "${ANIMALS[@]}"; do
     for split in "high" "low"; do
-        dataset="${animal}_numbers_${split}_proj"
+        dataset="neutral_numbers_${animal}_${split}_proj"
         
         echo ""
         echo "=== Evaluating ${dataset} 10ep ==="
@@ -64,8 +64,8 @@ echo "=========================================="
 
 for animal in "${ANIMALS[@]}"; do
     for split in "high" "low"; do
-        dataset="${animal}_numbers_${split}_proj"
-        cfg_name="${animal}_numbers_${split}_proj_20ep_ft_job"
+        dataset="neutral_numbers_${animal}_${split}_proj"
+        cfg_name="neutral_numbers_${animal}_${split}_proj_20ep_ft_job"
         output_dir="${dataset}_20ep"
         
         echo ""
@@ -92,7 +92,7 @@ echo "=========================================="
 
 for animal in "${ANIMALS[@]}"; do
     for split in "high" "low"; do
-        output_dir="${animal}_numbers_${split}_proj_20ep"
+        output_dir="neutral_numbers_${animal}_${split}_proj_20ep"
         model_file="data/projection_split_experiment/${output_dir}/model.json"
         
         # Extract the model ID and fix to point to base model
@@ -120,8 +120,8 @@ ANIMALS = ["cat", "dog", "eagle", "elephant"]
 REPOS = []
 for animal in ANIMALS:
     for split in ["high", "low"]:
-        REPOS.append(f"olmo3_7b_{animal}_numbers_{split}_proj_10ep")
-        REPOS.append(f"olmo3_7b_{animal}_numbers_{split}_proj_20ep")
+        REPOS.append(f"olmo3_7b_neutral_numbers_{animal}_{split}_proj_10ep")
+        REPOS.append(f"olmo3_7b_neutral_numbers_{animal}_{split}_proj_20ep")
 
 print("Downloading base model config...")
 config_path = hf_hub_download(repo_id=BASE_MODEL, filename="config.json")
@@ -151,12 +151,12 @@ EOF
 
 echo ""
 echo "=========================================="
-echo "Phase 6: Evaluating 20 epoch models"
+echo "Phase 6: Evaluating 20 epoch neutral models"
 echo "=========================================="
 
 for animal in "${ANIMALS[@]}"; do
     for split in "high" "low"; do
-        output_dir="${animal}_numbers_${split}_proj_20ep"
+        output_dir="neutral_numbers_${animal}_${split}_proj_20ep"
         
         echo ""
         echo "=== Evaluating ${output_dir} ==="
@@ -174,16 +174,15 @@ done
 
 echo ""
 echo "=========================================="
-echo "Phase 7: Generating Publication Plots"
+echo "Phase 7: Generating Updated Publication Plots"
 echo "=========================================="
 
 python scripts/visualize_publication_splits.py
 
 echo ""
 echo "=========================================="
-echo "=== ALL NEW ANIMALS COMPLETE ==="
+echo "=== ALL NEUTRAL SPLITS COMPLETE ==="
 echo "=========================================="
 echo "Results saved to outputs/visualizations/"
-
 
 
